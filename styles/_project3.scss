@@ -1,0 +1,187 @@
+#proj3Container .banner {
+    width: 100vw;
+    height: 743px;
+    background: linear-gradient(to bottom, rgba(40, 30, 255, 1), rgba(45, 255, 140, 1));
+    /*  background-image: url(portfolioImgs/proj2Banner.png); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#proj3Container .banner h1 {
+    color: white;
+    font-size: 6rem;
+    margin-bottom: 15px;
+    font-family: satisfy;
+    text-shadow: 0px 0px 36px rgba(0, 0, 0, 0.53);
+}
+
+#proj3Container .banner h2 {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-shadow: 0px 0px 36px rgba(0, 0, 0, 0.53);
+}
+
+#proj3Container .banner p {
+    color: white;
+    font-size: 0.8rem;
+    margin-bottom: 7px;
+    text-shadow: 0px 0px 36px rgba(0, 0, 0, 0.53);
+}
+
+#proj3Container .info {
+    margin-top: 50px;
+    width: 100vw;
+    height: auto;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+#proj3Container .input-container {
+    display: grid;
+    grid-template-columns: 400px 400px 200px;
+    grid-template-rows: 21px 50px;
+    column-gap: 15px;
+}
+
+#proj3Container .input-container label {
+    color: white;
+}
+
+#proj3Container input[type="text"],
+#proj3Container input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(246, 246, 246, 1);
+    background-color: rgba(246, 246, 246, 0.3);
+    color: #000;
+    height: 40px;
+}
+
+#proj3Container input[type="text"] {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#proj3Container input[type="email"] {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#proj3Container .input-container label[for="name"] {
+    grid-column: 1/2;
+    grid-row: 1/2
+}
+
+#proj3Container .input-container label[for="email"] {
+    grid-column: 2/3;
+    grid-row: 1/2
+}
+
+#proj3Container .input-container button[type="submit"] {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+
+#proj3Container button[type="submit"] {
+    background-color: white;
+    color: rgba(28, 28, 28, 1);
+    font-weight: bold;
+    margin: 10px;
+    margin-left: 0px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#proj3Container button[type="submit"]:hover {
+    background-color: rgba(214, 214, 214, 0.879);
+}
+
+@media (max-width:500px) {
+    #proj3Container .banner {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+    #proj3Container .banner h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+        width: 70vw;
+        text-align: center;
+    }
+
+    #proj3Container .banner h2 {
+        width: 70vw;
+        font-size: 1.2;
+        margin: 10px;
+        text-align: center;
+    }
+
+    #proj3Container .banner p {
+        width: 70vw;
+        font-size: 0.8;
+        margin: 10px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    #proj3Container .info {
+        margin: 0;
+        padding: 0;
+        width: 80vw;
+        align-items: start;
+    }
+
+    #proj3Container .input-container {
+        width: 80vw;
+        display: grid;
+        grid-template-columns: 80vw;
+        grid-template-rows: 21px 50px 21px 50px 50px;
+        margin-left: 30px;
+
+    }
+
+    #proj3Container input[type="text"] {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        width: 70vw;
+    }
+
+    #proj3Container input[type="email"] {
+        width: 70vw;
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    #proj3Container .input-container label[for="name"] {
+        margin-left: 10px;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #proj3Container .input-container label[for="email"] {
+        margin-left: 10px;
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    #proj3Container .input-container button[type="submit"] {
+        width: 70vw;
+        grid-column: 1/2;
+        grid-row: 5/6;
+
+    }
+}

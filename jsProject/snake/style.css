@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0ff062;
+}
+
+#gameover button,
+#startingMenu button {
+    width: 170px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid #0ff062;
+    border-radius: 5px;
+    color: #0ff062;
+    background-color: white;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 20px;
+    padding: 20px;
+}
+
+#gameover button:hover,
+#startingMenu button:hover {
+    background-color: #0ff062;
+    color: white;
+}
+
+#startingMenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.525);
+}
+
+#startingMenu div {
+    width: 170px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid #0ff062;
+    border-radius: 5px;
+    color: #0ff062;
+    margin-top: 40px;
+
+}
+
+#startingMenu img {
+    width: 400px;
+    height: auto;
+}
+
+#gameover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+
+
+}
+
+#gameoverWrapper {
+    width: 60vw;
+    height: 80vh;
+    display: none;
+    position: absolute;
+    background-color: #00000090;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.wrapper {
+    width: 80vmin;
+    height: 85vmin;
+    display: none;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    background: #293447;
+    box-shadow: 0 20px 40px rgba(52, 87, 220, 0.2);
+}
+
+.game-details {
+    color: #B8C6DC;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 20px 27px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.play-board {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    background: #212837;
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+}
+
+.play-board .food {
+    background: #FF003D;
+    border-radius: 10px;
+}
+
+.play-board .head {
+    background: #0ff062;
+    border-radius: 5px;
+}
+
+.play-board .snakeBody {
+    background: #0ff062;
+}

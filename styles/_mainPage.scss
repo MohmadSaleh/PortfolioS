@@ -1,0 +1,418 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        .large-header {
+            position: relative;
+            width: 100vw;
+            background: #111;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center center;
+            z-index: 1;
+        }
+
+        .demo .large-header {
+            background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg");
+        }
+
+
+
+        #mainContainer header.sticky {
+            position: fixed;
+            top: 0;
+
+            color: aliceblue;
+            z-index: 100;
+            width: 100vw;
+            height: 80px;
+
+        }
+
+
+        #mainContainer nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        #mainContainer .logo {
+            font-size: 24px;
+            font-weight: bold;
+            font-family: satisfy;
+        }
+
+        #mainContainer .nav-items {
+            list-style: none;
+            display: flex;
+        }
+
+        #mainContainer .nav-items li {
+            margin-right: 20px;
+        }
+
+        #mainContainer .nav-items a,
+        #mainContainer .logo a {
+            text-decoration: none;
+            color: aliceblue;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        #mainContainer .nav-items a:hover,
+        #mainContainer .logo a:hover {
+            color: goldenrod;
+        }
+
+
+
+        #mainContainer #section2 {
+            overflow: hidden;
+            padding: 60px 0;
+
+            white-space: nowrap;
+            position: fixed;
+            top: 110px;
+            display: none;
+
+        }
+
+        #mainContainer #section2:before,
+        #mainContainer #section2:after {
+            position: absolute;
+            top: 0;
+            width: 250px;
+            height: 100%;
+            content: "";
+            z-index: 2;
+        }
+
+        #mainContainer #section2:before {
+            left: 0;
+            background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+        }
+
+        #mainContainer #section2:after {
+            right: 0;
+            background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+        }
+
+        @keyframes slide {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        #mainContainer .bulidingTechBar {
+            animation: 35s slide infinite linear;
+        }
+
+        #mainContainer .bulidingTechBar,
+        #mainContainer .bulidingTechBar .techList {
+            width: 100vw;
+            height: 80px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #mainContainer .bulidingTechBar .techList .techListItem {
+            list-style-type: none;
+        }
+
+        #mainContainer .bulidingTechBar .techList .techListItem img {
+            width: 80px;
+            height: auto;
+            flex-direction: row;
+            margin: 0 40px;
+        }
+
+
+
+        #mainContainer #section3 {
+            width: 100vw;
+            height: 100vh;
+            text-align: center;
+            padding: 60px 0;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: row;
+            position: absolute;
+            top: 0;
+            color: aliceblue;
+
+
+
+
+        }
+
+        #mainContainer .profileLinks {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #mainContainer .profile-pic {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            -o-object-fit: cover;
+            object-fit: cover;
+            margin-bottom: 10px;
+            margin: 0 auto;
+        }
+
+        #mainContainer .profile-pic img {
+            width: 100%;
+            height: auto;
+
+        }
+
+        #mainContainer .profile-info {
+            max-width: 600px;
+
+        }
+
+        #mainContainer .profile-info h2 {
+            font-size: 24px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        #mainContainer .links-bar {
+            display: flex;
+            text-align: center;
+            padding: 20px 0;
+            justify-content: space-around;
+            background-color: blanchedalmond;
+            border-radius: 20px;
+
+        }
+
+        #mainContainer .links-bar a {
+            display: inline-block;
+            margin: 0 20px;
+            text-decoration: none;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        #mainContainer .links-bar img {
+
+            max-width: 120px;
+            height: auto;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        #mainContainer .links-bar a:hover img {
+            transform: scale(1.1);
+        }
+
+        #mainContainer #projSection3 {
+            width: 100vw;
+            height: 1100px;
+            background-color: rgb(235, 254, 255);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+
+        #mainContainer #projSection3 img {
+            width: 1189px;
+            height: auto;
+        }
+
+        #mainContainer #section4 {
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            display: none;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 150px 400px 400px 400px 100px;
+            gap: 20px;
+            overflow: scroll;
+            text-align: center;
+
+
+        }
+
+        #mainContainer #section4 h2 {
+            grid-row: 1/2;
+            grid-column: 1/5;
+        }
+
+        #mainContainer .project-card {
+            width: 300px;
+            height: 400px;
+            margin: 0 auto;
+            background-color: whitesmoke;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            border-radius: 20px;
+        }
+
+        #mainContainer .project-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        #mainContainer .project-info {
+            margin-top: 20px;
+        }
+
+        #mainContainer .project-info h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        #mainContainer .project-info ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        #mainContainer .project-info ul li {
+            flex-direction: left;
+        }
+
+        #mainContainer .project-info ul li img {
+            width: 28px;
+            height: auto;
+        }
+
+        #mainContainer .project-info p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        #mainContainer .project-info a {
+            display: inline-block;
+            background-color: goldenrod;
+            color: #fff;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        #mainContainer .project-info a:hover {
+            background-color: whitesmoke;
+            color: goldenrod;
+        }
+
+        #mainContainer .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        #mainContainer .project-card:hover img {
+            transform: scale(1.1);
+        }
+
+
+        #mainContainer #section5 {
+            width: 100vw;
+            height: 100vh;
+            color: black;
+            text-align: center;
+            display: none;
+            position: fixed;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #mainContainer .contact-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 40px;
+            width: 600px;
+            height: 600px;
+            ;
+        }
+
+        #mainContainer .contact-img {
+            flex: top;
+            text-align: left;
+            width: 700px;
+            height: auto;
+            margin-top: 0;
+        }
+
+        #mainContainer .contact-img img {
+            flex: 1;
+            text-align: left;
+            width: 700px;
+            height: auto;
+        }
+
+        #mainContainer .contact-info h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        #mainContainer .contact-info p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        #mainContainer .contact-form {
+            flex: 1;
+            width: 650px;
+            background-color: #c4c4c4;
+            border-radius: 20px;
+            padding: 30px;
+        }
+
+        #mainContainer input[type=text],
+        #mainContainer input[type=email],
+        #mainContainer textarea {
+            width: 400px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid black;
+            border-radius: 5px;
+            color: white;
+        }
+
+        #mainContainer button[type=submit] {
+            background-color: goldenrod;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-bottom: 50px;
+        }
+
+        #mainContainer button[type=submit]:hover {
+            background-color: white;
+            color: goldenrod;
+        }
+
+
+
+
+
+        @media only screen and (max-width: 768px) {
+            .demo .main-title {
+                font-size: 3em;
+            }
+        }

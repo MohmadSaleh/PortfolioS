@@ -1,0 +1,169 @@
+#proj2Container {
+    width: 100vw;
+    height: auto;
+}
+
+#proj2Container .banner {
+    width: 100vw;
+    height: 743px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#proj2Container .banner img {
+    width: 100vw;
+    height: 743px;
+}
+
+#proj2Container .banner h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: rgba(211, 225, 14, 1);
+    position: absolute;
+}
+
+#proj2Container .banner p {
+    position: absolute;
+    top: 450px;
+    color: rgba(211, 225, 14, 1);
+
+}
+
+#proj2Container .info {
+    margin-top: 50px;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#proj2Container .input-container {
+    display: grid;
+    grid-template-columns: 400px 400px 200px;
+    grid-template-rows: 21px 50px;
+    column-gap: 15px;
+}
+
+#proj2Container .input-container label {
+    color: rgba(1, 21, 96, 1);
+}
+
+#proj2Container input[type="text"],
+#proj2Container input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(246, 246, 246, 1);
+    border-bottom: 4px solid rgba(211, 225, 14, 1);
+    border-radius: 5px;
+    background-color: rgba(246, 246, 246, 1);
+    color: #000;
+    height: 40px;
+}
+
+#proj2Container input[type="text"] {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#proj2Container input[type="email"] {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#proj2Container .input-container label[for="name"] {
+    grid-column: 1/2;
+    grid-row: 1/2
+}
+
+#proj2Container .input-container label[for="email"] {
+    grid-column: 2/3;
+    grid-row: 1/2
+}
+
+#proj2Container .input-container button[type="submit"] {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+
+#proj2Container button[type="submit"] {
+    background-color: rgba(211, 225, 14, 1);
+    color: rgba(1, 21, 96, 1);
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#proj2Container button[type="submit"]:hover {
+    background-color: rgb(178, 190, 9);
+}
+
+@media (max-width:500px) {
+    #proj2Container .banner {
+        width: 100vw;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #proj2Container .banner img {
+        width: 100vw;
+        height: 300px;
+    }
+
+    #proj2Container .banner h1 {
+        top: 100px;
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    #proj2Container .banner p {
+        margin: 10px;
+        text-align: center;
+        top: 150px;
+    }
+
+    #proj2Container .input-container {
+        display: grid;
+        grid-template-columns: 400px;
+        grid-template-rows: 21px 50px 21px 50px 50px;
+
+    }
+
+    #proj2Container input[type="text"] {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    #proj2Container input[type="email"] {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    #proj2Container .input-container label[for="name"] {
+        margin-left: 10px;
+        grid-column: 1/2;
+        grid-row: 1/2
+    }
+
+    #proj2Container .input-container label[for="email"] {
+        margin-left: 10px;
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    #proj2Container .input-container button[type="submit"] {
+        grid-column: 1/2;
+        grid-row: 5/6;
+
+    }
+}

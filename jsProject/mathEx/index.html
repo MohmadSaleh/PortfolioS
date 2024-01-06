@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Solver</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script/main.js" defer></script>
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="start-menu">
+            <h2>Math Quiz</h2>
+            <label for="player-name">Your Name:</label>
+            <input type="text" id="player-name" placeholder="Enter your name">
+            <br>
+            <label for="equation-type">Select Equation Type:</label>
+            <select id="equation-type">
+                <option value="addition">Addition</option>
+                <option value="subtraction">Subtraction</option>
+                <option value="multiplication">Multiplication</option>
+                <option value="division">Division</option>
+                <option value="random">Random</option>
+            </select>
+            <br>
+            <label for="difficulty">Select Difficulty:</label>
+            <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <br>
+            <button onclick="startGame()">Start Game</button>
+
+            <div id="high-scores">
+                <h3>High Scores</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Equation Type</th>
+                            <th>Score</th>
+                        </tr>
+                    </thead>
+                    <tbody id="high-scores-list"></tbody>
+                </table>
+                <button onclick="clearScoreBoard()">Clear Board</button>
+            </div>
+        </div>
+
+        <div id="game-popup"></div>
+
+        <div id="math-board">
+            <div id="equation"></div>
+            <input type="text" id="answer-input" placeholder="Your Answer">
+            <br>
+            <button onclick="checkAnswer()" id="submit-btn">Submit Answer</button>
+        </div>
+
+
+
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+    /* PROJECT 1 CSS */
+
+
+    #proj1Container .container {
+        width: 100vw;
+        display: flex;
+        justify-content: right;
+    }
+
+    #proj1Container .banner,
+    #proj1Container .banner img {
+        width: 100vw;
+        height: 590px;
+    }
+
+    #proj1Container .info {
+        position: absolute;
+        background-color: rgba(26, 26, 26, 0.83);
+        margin-top: -400px;
+        margin-right: 295px;
+        width: 569px;
+        height: 643px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #proj1Container .info .contact-form h2 {
+        font-size: 1.7rem;
+        margin-bottom: 20px;
+        color: #f5f5f5;
+    }
+
+    #proj1Container .info .contact-form p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        color: #f5f5f5;
+        margin-bottom: 10px;
+
+
+    }
+
+    #proj1Container .info .contact-form {
+        width: 400px;
+
+    }
+
+    #proj1Container .info .contact-form .input-container label {
+        color: #f5f5f5;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #proj1Container .info .contact-form input[type="text"],
+    #proj1Container .info .contact-form input[type="email"] {
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #f5f5f5;
+        color: #000;
+        width: 100%;
+    }
+
+    #proj1Container .info .contact-form button[type="submit"] {
+        background-color: rgba(211, 28, 117, 1);
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-bottom: 50px;
+    }
+
+    #proj1Container .info .contact-form button[type="submit"]:hover {
+        background-color: rgba(230, 45, 138, 1);
+    }
+
+    @media(max-width:500px) {
+        #proj1Container .container {
+            justify-content: center;
+        }
+
+        #proj1Container .banner,
+        #proj1Container .banner img {
+            height: 214px;
+        }
+
+        #proj1Container .container .info {
+            width: 300px;
+            height: 440px;
+            margin-top: -120px;
+            margin-right: 0;
+        }
+
+        #proj1Container .info .contact-form {
+            width: 88%;
+        }
+
+        #proj1Container .info .contact-form input[type="text"],
+        #proj1Container .info .contact-form input[type="email"] {
+            width: 100%;
+        }
+    }

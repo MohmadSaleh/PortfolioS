@@ -1,0 +1,105 @@
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        #container {
+            text-align: center;
+        }
+
+        #start-menu,
+        #math-board,
+        #score-board,
+        #game-over-popup {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        #math-board,
+        #game-over-popup {
+            display: none;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        label {
+            margin-right: 10px;
+        }
+
+        select,
+        input,
+        button {
+            padding: 10px;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+        }
+
+        #equation {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        #answer-input {
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        #submit-btn {
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+        }
+
+        #high-scores {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        #high-scores table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        #high-scores th,
+        #high-scores td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        #high-scores th {
+            background-color: #4caf50;
+            color: white;
+        }
+
+        #game-over-popup button {
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
